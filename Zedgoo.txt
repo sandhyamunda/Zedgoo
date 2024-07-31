@@ -1,0 +1,131 @@
+import { Avatar,  Typography } from "@mui/material";
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import './Dashboard1.css'
+
+function Dashboard1(){
+
+    return(
+      <div className="Contaner">
+        <div className="menu-bar">
+            <Typography variant="h2" component="h" >ZedGoo</Typography>
+            <Typography className="Mian_menu">MAIN MENU</Typography>
+            <ul></ul>
+            <Typography className="DaSH_borard">DASHBOARD</Typography>
+            <Typography className="Batch">BATCH MANGEMENT</Typography>
+            <div className="lift_footer">
+            <Typography className="sitting">LOG OUT</Typography>
+            <Typography className="sitting">SITTING</Typography>
+            <Typography className="sitting">HELP</Typography>
+            </div>
+        </div>
+        
+
+            <div className="fetuer">
+            <div className="header">
+                <span className="Icon">
+                <NotificationsIcon className="Notification"></NotificationsIcon>
+                <Avatar className="Avatar">s</Avatar>
+                </span>
+            </div>
+            <span className="">
+            <Typography variant="h4" component="h4">Batch Mangement</Typography>
+            <label>Search:
+            <input placeholder="Batch Id/ Traine Id/Subject"/>
+            </label>
+            <button>+Add new</button>
+            </span>
+            <div className="section">
+                <Typography className="nothing">Nothing to Show</Typography>
+            </div>
+            </div>
+      </div> 
+    )
+}
+export default Dashboard1;
+//css code;
+}
+.Contaner{
+    border: none;
+    display: flex;
+    margin: 5px;
+    
+}
+.menu-bar{
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    
+}
+.Batch{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
+.DaSH_borard{
+    margin-top: 15px;
+}
+.Mian_menu{
+    color: darkgray;
+    padding: 30px;
+}
+
+.sitting{
+    padding: 20px;
+}
+.lift_footer{
+    margin-top: 280px;
+    
+}
+.header{
+    border: none;
+    width: 1280px;
+    box-shadow: 0px 5px silver;
+    
+}
+.section{
+    border: none;
+    margin: 40px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px silver;
+}
+
+.fetuer{
+    border: solid 1px;
+    
+}
+span{
+    display: flex;
+    margin: 10px;
+}
+label{
+    margin-left: 600px;
+}
+input{
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+}
+button{
+height: 30px;
+margin-left: 20px;
+margin-top: 5px;
+background-color: black;
+color: white;
+border-radius: 5px;
+}
+.nothing{
+    text-align: center;
+    color: darkgray;
+}
+.Icon{
+    margin-left: 1180px;
+}
+.Notification{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.Avatar{
+    margin: 5px;
+}
